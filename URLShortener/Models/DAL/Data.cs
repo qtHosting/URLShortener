@@ -13,7 +13,7 @@ namespace URLShortener.Models.DAL
 
         }
 
-        public string GetNewShortID(string strURLSubmission)
+        public string GetNewShortID(string strURLSubmission, string strIPAddress)
         {
             string strShortID = "";
 
@@ -27,13 +27,21 @@ namespace URLShortener.Models.DAL
             return blnReturn;
         }
 
-        public string GetURLFromShortID(string strShortID)
+        public string GetURLFromShortID(string strShortID, string strIPAddress)
         {
             string strURL = "";
 
             return strURL;
         }
 
+        public void LogURLRequests(string strShortID, string strIPAddress)
+        {
 
+        }
+
+        public void LogAPICall(string strAPIKey, string strAPICall, string strIPAddress)
+        {
+
+        }
     }
 }
